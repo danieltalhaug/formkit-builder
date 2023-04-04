@@ -1,0 +1,21 @@
+{
+  "name": "formkit-builder",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.5",
+    "nuxt": "^3.3.3"
+  },
+  "dependencies": {
+    "@formkit/nuxt": "^0.16.4",
+    "@vueuse/nuxt": "^9.13.0",
+    "nanoid": "^4.0.2",
+    "vuedraggable": "^4.1.0"
+  }
+}
