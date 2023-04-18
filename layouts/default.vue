@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-gray-200 h-screen grid grid-cols-3 gap-1">
-        <aside>
-            Components
+    <div class="bg-gray-100 h-screen grid grid-cols-4 gap-8 p-8">
+        <aside class="card">
+            <FormComponentSelector />
         </aside>
-        <main>
+        <main class="card col-span-2">
             <FormPreview :schema="schema" />
         </main>
     </div>
@@ -20,14 +20,21 @@ const schema = [
         name: 'email',
         label: 'Email',
         help: 'This will be used for your account.',
-        validation: 'required|email'
+        validation: 'required|email',
     },
     {
         $formkit: 'password',
         name: 'password',
         label: 'Password',
         help: 'Enter your new password.',
-        validation: 'required|length:5,16'
+        validation: 'required|length:5,16',
     },
 ];
 </script>
+
+<style>
+.card {
+    @apply bg-white rounded p-8 ring-1 ring-gray-200;
+}
+
+</style>
